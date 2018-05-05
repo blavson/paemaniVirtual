@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+
+{% block title %}{{ section.title }}{% endblock %}
+
+{% block container %}
+<ul>
+    <li> Name : {{suitor.name}} </li>
+    <li> LastName : {{suitor.last_name}} </li>
+    <li> Gender: {{suitor.gender}} </li>
+    <li> Date Of Birth: {{suitor.dob}} </li>
+    <li> Race : {{aprnc.ethnicity}} </li>
+    <li>Hair Color : {{aprnc.hair_color}} </li>
+    <li> Height : {{aprnc.height}} </li>
+    <li> Weight : {{aprnc.weight}} </li>
+</ul>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'master.html'%}
+
+{%block title %} Homepage {% endblock %}
+
+{%block container %}
+
+{% for suitor in suitors %}
+<ul>
+    <li> Name : {{suitor.name}} </li>
+    <li> LastName : {{suitor.last_name}} </li>
+    <li> Gender: {{suitor.gender}} </li>
+    <li> Date Of Birth: {{suitor.dob}} </li>
+    <li> Race : {{suitor.suitor_id.ethnicity}} </li>
+    <li>Hair Color : {{aprnc.hair_color}} </li>
+    <li> Height : {{aprnc.height}} </li>
+    <li> Weight : {{aprnc.weight}} </li>
+</ul>
+<hr>
+{% endfor %}
+{% endblock %}
