@@ -3,7 +3,7 @@
 {%block title %} Homepage {% endblock %}
 
 {%block container %}
-
+{% if suitors %}
 {% for suitor in suitors %}
 <ul>
     <li> Name : {{suitor.name}} </li>
@@ -17,4 +17,5 @@
 </ul>
 <hr>
 {% endfor %}
+{% endif %}
 {% endblock %}

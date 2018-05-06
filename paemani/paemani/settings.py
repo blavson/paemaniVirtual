@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
     'suitor.apps.SuitorConfig',
 ]
 
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'paemani.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sometest',
+        'NAME': 'paemani',
         'USER' : 'root',
         'PASSWORD' : 'misha' ,
     }
